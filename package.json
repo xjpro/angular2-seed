@@ -1,0 +1,32 @@
+{
+  "name": "angular2-seed",
+  "private": false,
+  "version": "1.0.0",
+  "description": "minimalist seed for an Angular2 project",
+  "keywords": ["angular2"],
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.6",
+    "zone.js": "0.5.10"
+  },
+  "scripts": {
+    "postinstall": "tsd reinstall",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xjpro/angular2-seed.git"
+  },
+  "author": "xjpro",
+  "license": "",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.10.0",
+    "tsd": "^0.6.5"
+  }
+}
