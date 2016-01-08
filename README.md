@@ -1,6 +1,6 @@
 ###What is this?###
 
-A minimalist MEAN app setup using Angular2
+A seed project using MEAN with Angular2
 * Database: Mongo, using Mongoose
 * Server: Node & Express
 * Client side: Angular2 - TypeScript compiled by gulp
