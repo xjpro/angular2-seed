@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/">
+	<title>angular2-seed</title>
+	<script src="/node_modules/systemjs/dist/system.src.js"></script>
+	<script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+	<script src="/node_modules/rxjs/bundles/Rx.umd.js"></script>
+	<script src="/node_modules/angular2/bundles/angular2.js"></script>
+	<script src="/node_modules/angular2/bundles/router.js"></script>
+</head>
+<body>
+
+<app>Loading...</app>
+
+<script>
+	System.config({
+		defaultJSExtensions: true,
+		paths: {
+			'boot': '/dist/boot',
+			'*': '/node_modules/*'
+		}
+	});
+	System.import('boot');
+</script>
+
+</body>
+</html>

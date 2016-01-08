@@ -3,11 +3,18 @@
   "private": false,
   "version": "1.0.0",
   "description": "minimalist seed for an Angular2 project",
-  "keywords": ["angular2"],
+  "keywords": [
+    "angular2"
+  ],
   "dependencies": {
     "angular2": "2.0.0-beta.0",
+    "bluebird": "^3.1.1",
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "systemjs": "0.19.6",
@@ -15,7 +22,7 @@
   },
   "scripts": {
     "postinstall": "tsd reinstall",
-    "start": "node app.js"
+    "start": "gulp && node app.js"
   },
   "main": "app.js",
   "repository": {

@@ -1,28 +1,24 @@
-import {Component, View, OnInit} from 'angular2/core';
+import {Component, View} from 'angular2/core';
 import {Router, Route, RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {BunkerData} from './BunkerData';
-import {ChatComponent} from './ChatComponent';
+import {HeroService} from './HeroService';
+import {HeroListComponent} from './HeroListComponent';
+import {HeroDetailComponent} from './HeroDetailComponent';
 
 @Component({
-	selector: 'bunker',
-	viewProviders: [BunkerData]
+    selector: 'app',
+    viewProviders: [HeroService]
 })
 @View({
-	directives: ROUTER_DIRECTIVES,
-	template: `
+    directives: ROUTER_DIRECTIVES,
+    template: `
 	<router-outlet></router-outlet>
 `
 })
 @RouteConfig([
-	{path: '/rooms', component: ChatComponent, name: 'ChatLobby', useAsDefault: true},
-	{path: '/rooms/:id', component: ChatComponent, name: 'ChatRoom'},
+    {path: '/hero', component: HeroListComponent, name: 'HeroList', useAsDefault: true},
+    {path: '/hero/:id', component: HeroDetailComponent, name: 'HeroDetail'}
 ])
-export class AppComponent implements OnInit {
-
-	constructor(private bunkerData:BunkerData) {
-	}
-
-	ngOnInit() {
-		this.bunkerData.init();
-	}
+export class AppComponent {
+    constructor() {
+    }
 }
