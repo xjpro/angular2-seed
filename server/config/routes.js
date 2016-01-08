@@ -1,6 +1,9 @@
 var config = require('./config');
 var viewController = require('../controllers/viewController');
 
-module.exports.http = function (app) {
+module.exports.http = (app) => {
 	app.get('/*', viewController.index);
+};
+
+module.exports.socket = (app) => {
 };

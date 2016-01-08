@@ -1,6 +1,6 @@
 // check the command line options for a -env=someEnvironment
 var environment = _(process.argv)
-	.map(function (item) {
+	.map(item => {
 
 		// unfortunately mocha mangles the env=something, so using regex to check both
 		// ex:
@@ -18,7 +18,7 @@ environment = environment || process.env.NODE_ENV || 'development';
 
 var config = require('./env/' + environment);
 
-config.isLocal = function (req) {
+config.isLocal = (req) => {
 	return req.connection.remoteAddress === '127.0.0.1'
 		|| req.connection.remoteAddress === '::1'
 		|| req.connection.remoteAddress === '::ffff:127.0.0.1'

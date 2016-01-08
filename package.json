@@ -1,10 +1,9 @@
 {
   "name": "angular2-seed",
-  "private": false,
   "version": "1.0.0",
-  "description": "minimalist seed for an Angular2 project",
+  "description": "minimalist MEAN app setup using Angular2",
   "keywords": [
-    "angular2"
+    "angular2", "mean", "express"
   ],
   "dependencies": {
     "angular2": "2.0.0-beta.0",
@@ -14,7 +13,9 @@
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "express": "^4.13.3",
+    "kerberos": "0.0.17",
     "lodash": "^3.10.1",
+    "mongoose": "^4.3.4",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "systemjs": "0.19.6",
@@ -30,7 +31,7 @@
     "url": "git://github.com/xjpro/angular2-seed.git"
   },
   "author": "xjpro",
-  "license": "",
+  "license": "Public Domain",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-typescript": "^2.10.0",
